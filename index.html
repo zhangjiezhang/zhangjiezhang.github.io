@@ -1,7 +1,210 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+	<head>
+		<title>ZJ主页</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="ZJ主页 of pascall" />
+		<meta name="keywords" content="ZJ主页,pascall" />
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<link rel="stylesheet" href="css/style-wide.css" />
+		</noscript>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+				<span class="logo icon fa-paper-plane-o"></span>
+				<h1>欢迎来到nginx搭建的web服务静态资源系统</h1>
+				<p>由HTML5设计的响应HTML5+CSS3站点主页</p>
+				<p>这里主要连接项目入口、个人博客地址、常用指令操作</p>
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+				<div class="box alt container">
+					<section class="feature left">
+						<a href="https://eureka.pascall.xyz" class="image icon fa-code" target="_blank"><img src="images/eureka.png" alt="spring cloud eureka server" /></a>
+						<div class="content">
+							<h3>Eureka Server</h3>
+							<p>spring cloud eureka server.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="https://authority.pascall.xyz" class="image icon fa-image" target="_blank"><img src="images/authority.png" alt="Oauth 认证与授权平台"></a>
+						<div class="content">
+							<h3>Oauth 2</h3>
+							<p>Oauth 认证与授权平台.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="http://59.110.243.111:9002" class="image icon fa-code" target="_blank"><img src="images/jenkins.png" alt="jenkins server" /></a>
+						<div class="content">
+							<h3>jenkins</h3>
+							<p>jenkins server.</p>
+						</div>
+					</section>
+					<section class="feature right">
+						<a href="http://118.25.208.156" class="image icon fa-image" target="_blank"><img src="images/harbor.png" alt="Harbor Server"></a>
+						<div class="content">
+							<h3>Harbor</h3>
+							<p>Harbor Server.</p>
+						</div>
+					</section>
+					<section class="feature left">
+						<a href="https://ems.pascall.xyz/employee-manager-system/" class="image icon fa-signal" target="_blank"><img src="https://www.pascall.xyz/images/ems.png" alt="" /></a>
+						<div class="content">
+							<h3>人力资源后台管理系统</h3>
+							<p>用于人员资源的管理，使用nlf2搭配java实现后台功能，使用前端小组件和jquery实现前台.</p>
+						</div>
+					</section>
+				</div>
+				
+
+				<div class="box container">
+					<header>
+						<h2>Liunx下的操作</h2>
+					</header>
+					<section>
+						<header>
+							<h3>linux下安装sublime 3</h3>
+						</header>
+						<ul class="default">
+							<li>wget https://download.sublimetext.com/sublime_text_3_build_3126_x64.tar.bz2：获取压缩文件（64位）.</li>
+							<li>tar jxvf sublime_text_3_build_3126_x64.tar.bz2：解压.</li>
+							<li>mv sublime_text_3 /usr/local/sublime：移动到指定位置.</li>
+							<li>ln -s /usr/local/sublime/sublime_text /usr/local/bin/sublime_text：添加软链接.</li>
+							<li>sublime_text：运行sublime 3.</li>
+							<li>cp /usr/local/sublime/sublime_text.desktop /usr/share/applications：创建桌面快捷方式.</li>
+							<li>vim /usr/share/applications/sublime_text.desktop：修改桌面配置文件.</li>
+							<li><span style="margin-left: 20px;">Exec=/usr/local/sublime/sublime_text %F：//sublime_text路径地址</li>
+							<li><span style="margin-left: 20px;">Icon=/usr/local/sublime/Icon/48x48/sublime-text.png ：//sublime图标icon路径地址</li>
+							<li><span style="margin-left: 20px;">Exec=/usr/local/sublime/sublime_text -n ：//打开新窗口路径</li>
+							<li><span style="margin-left: 20px;">Exec=/root/project --command new_file ：//创建新文件的命令路劲</li>
+							<li>应用程序 >编程 > Sublime Text”右键”将此启动器添加到桌面”来启动sublime text 3</li>
+						</ul>
+					</section>
+					<section>
+						<header>
+							<h3>linux下安装WebStorm</h3>
+						</header>
+						<ul class="default">
+							<li>wget https://download.jetbrains.8686c.com/webstorm/WebStorm-2018.2.3.tar.gz：获取源码.</li>
+							<li>tar zxvf WebStorm-2018.2.3.tar.gz：解压.</li>
+							<li>mv WebStorm-182.4323.44 /usr/local/webstorm：移动到指定位置.</li>
+							<li>ln -s /usr/local/webstorm/bin/webstorm.sh /usr/local/bin/webstorm：添加启动软连接.</li>
+							<li>webstorm：运行webstorm</li>
+						</ul>
+					</section>
+					<section>
+						<header>
+							<h3>linux下安装vs code</h3>
+						</header>
+						<ul class="default">
+							<li>sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc：导入下载源.</li>
+							<li>sudo sh -c 'echo -e "[code]\nname=Visual Studio Code\nbaseurl=
+								https://packages.microsoft.com/yumrepos/vscode\nenabled=
+								1\ngpgcheck=1\ngpgkey=https://packages.microsoft.com/keys/microsoft.asc" 
+								> /etc/yum.repos.d/vscode.repo'：执行脚本.</li>
+							<li>yum check-update：检查更新.</li>
+							<li>sudo yum install code：安装.</li>
+						</ul>
+					</section>
+					<!-- <section>
+						<header>
+							<h3>Table</h3>
+						</header>
+						<div class="table-wrapper">
+							<table class="default">
+								<thead>
+									<tr>
+										<th>ID</th>
+										<th>Name</th>
+										<th>Description</th>
+										<th>Price</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>45815</td>
+										<td>Something</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>24524</td>
+										<td>Nothing</td>
+										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
+										<td>19.99</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td colspan="3"></td>
+										<td>100.00</td>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					</section> -->
+				</div>
+			</div>
+			
+		<!-- Footer -->
+			<div id="footer">
+				<div class="container small">
+
+					<header class="major last">
+						<h2>更多链接</h2>
+					</header>
+
+					<p>
+						<a href="http://www.pascall.xyz:9998">宝塔控制面板</a> | 
+						<a href="http://file.pascall.xyz">静态文件系统</a> 
+						<br/>
+						<a href="https://www.cnblogs.com/leefreeman/p/7344460.html#4073474">深入理解java虚拟机</a> | 
+						<a href="https://www.pascall.xyz/descript/httpHistory.html">HTTP协议的发展历程 </a> | 
+						<a href="https://www.pascall.xyz/descript/httpCharacter.html">HTTP特性</a> | 
+						<a href="https://www.pascall.xyz/descript/descript.html">Vue-cli脚手架安装</a>
+						<br/>
+						<a href="https://www.pascall.xyz/descript/index.html">旧主页</a>						
+						<br/>
+						<a href="https://www.baidu.com/s?ie=UTF-8&wd=jenkins%E6%9E%84%E5%BB%BAmaven%E8%BF%9C%E7%A8%8B%E9%A1%B9%E7%9B%AE">jenkins构建maven远程项目</a>
+						<br/> 
+						<a href="https://www.cnblogs.com/imyalost/p/8781759.html">docker+github+jenkins+maven自动化部署----邮件配置</a>
+						<br/>
+						<a href="https://blog.csdn.net/boling_cavalry/article/details/78943061">docker+github+jenkins+maven自动化部署----提交代码到github时自动触发构建任务配置
+</a>
+						<br/>
+						<a href="https://blog.csdn.net/ggjlvzjy/article/details/51151591">docker+github+jenkins+maven自动化部署</a>
+						<br/>
+					</p>
+
+					<ul class="copyright">
+						<li>&copy; Pascall. All rights reserved.</li><li>Design: Personal home page  - Look more from <a href="https://www.cnblogs.com/pascall/" title="博客园" target="_blank">张界-博客园</a></li>
+					</ul>
+			
+				</div>
+			</div>
+
+	</body>
 </html>
